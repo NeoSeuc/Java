@@ -1,4 +1,4 @@
-package algorithms.oop;
+package oop;
 
 public class Circle implements Figure {
     private String name = "Circle";

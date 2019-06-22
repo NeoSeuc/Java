@@ -1,4 +1,4 @@
-package algorithms.oop;
+package oop;
 
 abstract class Animal {
     abstract void roar();

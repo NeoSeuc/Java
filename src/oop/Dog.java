@@ -1,4 +1,4 @@
-package algorithms.oop;
+package oop;
 
 class Dog extends Animal {
     @Override

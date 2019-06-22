@@ -1,4 +1,4 @@
-package algorithms.paterns;
+package paterns;
 
 public class Singleton {
     private static Singleton instance = null;

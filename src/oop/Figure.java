@@ -1,4 +1,4 @@
-package algorithms.oop;
+package oop;
 
 public interface Figure {
     public String getName();

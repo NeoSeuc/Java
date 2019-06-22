@@ -1,4 +1,4 @@
-package algorithms.oop;
+package oop;
 
 class Cat extends Animal {
     @Override

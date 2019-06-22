@@ -1,4 +1,4 @@
-package algorithms.oop;
+package oop;
 
 public class Cube implements Figure {
     private final int a;
