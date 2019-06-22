@@ -27,13 +27,25 @@ public class JDBC {
         return connection;
     }
 
+    public ResultSet getSelectResult(String table) throws SQLException {
+        return connection.createStatement().executeQuery("SELECT * FROM "+table);
+    }
+
+    public int insertIntoTable(String table, String[] columns, String[] values) throws SQLException {
+        String sql = "INSERT INTO "+table+" ("+String.join(", ", columns)+") VALUES (\""+String.join("\",\"", values)+"\")";
+        return connection.createStatement().executeUpdate(sql);
+    }
+
     public static void main(String[] args) throws Exception {
         String url = "jdbc:mysql://localhost/chat?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
         String user = "login";
         String password = "password";
-        Connection conn = JDBC.getInstance(url, user, password).getConnection();
-        Statement stm = conn.createStatement();
-        ResultSet res = stm.executeQuery("SELECT * FROM message");
+        JDBC jdbc = JDBC.getInstance(url, user, password);
+        jdbc.insertIntoTable("message", new String[]{"text", "sender"}, new String[]{"all ok", "java"});
+        ResultSet res = jdbc.getSelectResult("message");
+
+
+
         while (res.next()) {
             System.out.println(res.getString(3)+" "+res.getString(2)+" "+res.getString(4));
         }
