@@ -10,7 +10,10 @@ Algorithms
 ***Sorting Algorithms***
 ###
 - Bubble sort
+- Shaker sort
 
 
 Patterns
 ---
+
+- Singelton
