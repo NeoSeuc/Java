@@ -17,7 +17,7 @@ public class App {
         dog.dogIsDoingSomething();
 
         System.out.println("============================================");
-        System.out.println("Polymorphism through inheritance inheritance");
+        System.out.println("Polymorphism through inheritance");
 
         List<Animal> animals = new ArrayList<>();
 
@@ -31,7 +31,7 @@ public class App {
         }
 
         System.out.println("============================================");
-        System.out.println("Polymorphism through using interfaces");
+        System.out.println("Polymorphism through interfaces");
 
         List<Figure> figures = new ArrayList<>();
 

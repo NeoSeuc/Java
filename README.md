@@ -16,4 +16,4 @@ Algorithms
 Patterns
 ---
 
-- Singelton
+- Singleton
