@@ -17,3 +17,4 @@ Patterns
 ---
 
 - Singleton
+- Factory
